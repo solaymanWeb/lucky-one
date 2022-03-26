@@ -1,5 +1,5 @@
-# project name is Laptop Bazar
+# project name is "Laptop Bazar"
 
-This project live link [Live link](https://github.com/facebook/create-react-app).
+This project  [Live link](https://lucky-one-react-app.netlify.app/)
 
 
