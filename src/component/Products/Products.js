@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Products.css'
 
@@ -9,6 +10,13 @@ const Products = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
+
+    const [cart, setCart]=useState([])
+    const addToCart= (props) =>{
+        const newCart = [...cart, props];
+        setCart(newCart);
+    }
+ 
     return (
         <div className='main-container'>
             <h2 className='heading'>Laptop Bazar</h2>
@@ -18,11 +26,19 @@ const Products = () => {
                 products.map(product=><Product 
                     product={product}
                     key={product.id}
+                    addToCart ={addToCart}
                     ></Product>)
             }
             </div>
             <div className="cart-container">
-                <h3 className='selected-laptop'>Selected Laptop</h3>
+            <h3 className='selected-laptop'>Selected Laptop</h3>
+                {
+                    cart.map(cart=> <Cart
+                         carts={cart}
+                         key={cart.id}
+                    
+                    ></Cart>)
+                }
             </div>
         </div>
         </div>

@@ -1,0 +1,17 @@
+.selected-laptop{
+    text-align: center;
+    font-size: 25px;
+}
+.laptop-name{
+    padding: 10px;
+}
+.clicked-cart img{
+    width: 30px;
+    height: 30px;
+}
+.clicked-cart{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 15px;
+}
