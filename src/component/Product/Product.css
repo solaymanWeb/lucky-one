@@ -1,0 +1,23 @@
+.product img{
+    width: 100%;
+}
+.product{
+    width: 300px;
+    margin: 7px;
+    background-color:#FFFFFF;
+}
+.cart-info{
+    padding-left: 14px;
+    border-top: 2px solid whitesmoke;
+}
+.btn-cart{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color:burlywood;
+    font-size: 18px;
+}
+.btn-cart:hover{
+    background-color:orange;
+    color: white;
+}
