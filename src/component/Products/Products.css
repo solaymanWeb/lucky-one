@@ -26,3 +26,16 @@
     top: 0;
    
 }
+.remove-btn{
+    background-color: orangered;
+    padding: 10px 20px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+ 
+}

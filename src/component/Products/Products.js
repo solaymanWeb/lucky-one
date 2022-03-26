@@ -16,6 +16,9 @@ const Products = () => {
         const newCart = [...cart, props];
         setCart(newCart);
     }
+     const removeBtn = () =>{
+        setCart([])
+     }
  
     return (
         <div className='main-container'>
@@ -39,6 +42,7 @@ const Products = () => {
                     
                     ></Cart>)
                 }
+                  <button onClick={removeBtn} className='remove-btn'>remove all items</button>
             </div>
         </div>
         </div>
